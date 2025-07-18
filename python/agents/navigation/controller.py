@@ -46,7 +46,7 @@ class VehiclePIDController:
         self._lon_controller = PIDLongitudinalController(self._vehicle, **args_longitudinal)
         self._lat_controller = PIDLateralController(self._vehicle, **args_lateral)
         # self._lat_controller = PureSuitLateralController(self._vehicle)
-        self._lat_controller = StanleyLateralController(self._vehicle)
+        # self._lat_controller = StanleyLateralController(self._vehicle)
 
     def run_step(self, target_speed, waypoint):
         """
